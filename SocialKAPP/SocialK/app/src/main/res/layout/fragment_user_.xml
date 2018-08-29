@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_Class">
+
+    <view
+        android:id="@+id/view"
+        class="android.support.v4.view.ViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteY="148dp" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabTextColor="@color/colorPrimary">
+
+
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab_text_1" >
+
+        </android.support.design.widget.TabItem>
+
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab_text_2" />
+    </android.support.design.widget.TabLayout>
+
+    <ImageView
+        android:id="@+id/user_profile"
+        android:layout_width="100dp"
+        android:layout_height="114dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="93dp"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="105dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="157dp"
+        android:text="TextView" />
+
+    <com.like.LikeButton
+        android:id="@+id/follow"
+        android:layout_width="37dp"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/user_profile"
+        android:layout_marginEnd="30dp"
+        app:icon_size="25dp"
+        app:icon_type="thumb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:like_drawable="@drawable/thumb_on"
+        app:unlike_drawable="@drawable/thumb_off" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
